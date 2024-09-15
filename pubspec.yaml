@@ -1,0 +1,63 @@
+name: flutter_newsapp_clean_architecture
+description: "News app made from flutter"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^8.1.6
+
+  # Comparisons
+  equatable: ^2.0.5
+
+  # Service Locator
+  get_it: ^7.7.0
+
+  # Dates format
+  intl: ^0.19.0
+
+  # Database
+  floor: ^1.5.0
+  sqflite: ^2.3.3+1
+
+  # Api requests
+  retrofit: ^4.4.1
+  dio: ^5.7.0
+
+  # Hooks
+  flutter_hooks: ^0.20.5
+
+  # Cache Image
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  floor_generator: ^1.5.0
+  retrofit_generator: ^9.1.2
+
+flutter:
+
+  uses-material-design: true
+
+fonts:
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/muli/Muli-Light.ttf
+          weight: 300
+
